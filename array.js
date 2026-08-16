@@ -78,5 +78,3 @@ console.log(multiply);
 
 
 
-
-
