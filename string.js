@@ -29,10 +29,28 @@ console.log(myname.substring(0 ,3));
 console.log(myname.substring(3));
 console.log(myname.substring(-3));
 
-//padStart
-let companysname = "bridal"
-console.log(companysname.padStart(13,"destiny"));
+//replace and replaceAll
+const stringtext = "Destiny is a fine girl, Destiny is so smart and cute and Destiny is a software developer"
+//console.log(stringtext.replace("Destiny", "she"));
+//console.log(stringtext.replaceAll("Destiny", "she"));
 
-//padEnd
-let edittedname = "destiny"
-console.log(edittedname.padEnd(13, "bridal"));
+//split method
+let splittedtext = stringtext.split(",")
+console.log(splittedtext[0].replaceAll("Destiny", "she"));
+
+//reverse method
+let panlidrome = "madam"
+let reverse = panlidrome.split("").reverse().join("")
+console.log(reverse)
+
+//checking panlidrome
+function wordcheck(word){
+   return word === word.split("").reverse().join("").toUpperCase()?"yes it is a panlidrome": "no it is not a panlindrome"
+}
+
+console.log(wordcheck("destiny"))
+
+//padstart and padend
+//padstart
+const companyname = "Collection"
+console.log(companyname.padStart(14, "dera"));
